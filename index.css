@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/cloud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: 1px solid hsl(0, 0%, 0.75%);
+  padding: 170px 200px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 18%;
+  color: rgb(16, 10, 10);
+  margin-left: 1rem;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+.input-field input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgb(230, 216, 216);
+}
+
+input:hover {
+  outline: none;
+}
+
+.search-icon {
+  margin-left: 10px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.display {
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.display .city-name {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.display .temp {
+  font-size: 35px;
+  margin-top: 1rem;
+  font-family: monospace;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.display .emoji {
+  margin-left: 2.6rem;
+  font-size: 40px;
+  color: yellow;
+}
+
+.error {
+  position: absolute;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+  margin-left: 1rem;
+  top: 80%;
+  text-align: center;
+}
